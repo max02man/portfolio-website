@@ -1,0 +1,88 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <h1 class="col-md-10">Welcome To Alaa Hawsawi Portfolio</h1>
+    <img class="col-md-2" width="350" height="200" src="~/img/me.jpg" />
+    <p class="lead">Computer Infromation System at Unvirsity of Louisville
+        </p>
+    <p><a style="background-color:black" class="btn btn-primary btn-lg" href="~/img/Resume3.pdf" target="_blank">Resume</a></p>
+</div>
+<div id="uofl">
+<div class="row" id="first-row">
+    <h1 style="color:red">Unvirsity of Louisville Courses</h1>
+    <div class="col-md-4">
+        <h2>Applation Devaloping</h2>
+        <p>C#</p>
+        <p><a class="btn btn-default" @Html.ActionLink("CIS199", "programming", "Home")</a></p>
+    </div>
+    <div class="col-md-4">
+        <h2>Database Design</h2>
+        <p>SQL</p>
+        <p><a class="btn btn-default" href="https://github.com/max02man/CIS310-Database-SQL">CIS310</a></p>
+    </div>
+    <div class="col-md-4">
+        <h2>Web Architecture</h2>
+        <p>.Net aunglur</p>
+        <p><a class="btn btn-default" @Html.ActionLink("CIS411", "web_deve", "Home")</a></p>
+    </div>
+
+</div>
+    <div class="row" id="2nd-row">
+        <div class="col-md-4">
+            <h2>Development Project</h2>
+            <p>Team project for KSOA</p>
+            <p><a class="btn btn-default" href="https://github.com/max02man/CIS420-Development-Project">CIS420</a></p>
+        </div>
+        <div class="col-md-4">
+            <h2>System Analysis and Design</h2>
+            <p>KSOA</p>
+            <p><a class="btn btn-default" href="https://github.com/max02man/CIS320-Systems-Analysis-and-Design">CIS320</a></p>
+        </div>
+        <div class="col-md-4">
+            <h2>Understructure</h2>
+            <p>Coming soon</p>
+            <p><a class="btn btn-default">Understructure </a></p>
+        </div>
+    </div>
+    </div>
+
+<div id="semo">
+    <div class="row" id="3rd-row">
+        <h1 style="color:red">Southeast Missouri State Univrstiy</h1>
+        <div class="col-md-4">
+            <h2>Applation Devaloping</h2>
+            <p>C#</p>
+            <p><a class="btn btn-default" @Html.ActionLink("CIS199", "programming", "Home")</a></p>
+        </div>
+        <div class="col-md-4">
+            <h2>Database Design</h2>
+            <p>SQL</p>
+            <p><a class="btn btn-default" @Html.ActionLink("CIS310", "DB_desgin", "Home")</a></p>
+        </div>
+        <div class="col-md-4">
+            <h2>Web Architecture</h2>
+            <p>.Net aunglur/p>
+            <p><a class="btn btn-default" @Html.ActionLink("CIS411", "web_deve", "Home")</a></p>
+        </div>
+    </div>
+    <div class="row" id="4th-row">
+        <div class="col-md-4">
+            <h2>Security Eithic</h2>
+            <p>protact yourself</p>
+            <p><a class="btn btn-default" @Html.ActionLink("CIS481", "Info_security", "Home")</a></p>
+        </div>
+        <div class="col-md-4">
+            <h2>Data Anlisis</h2>
+            <p>SAS Entirprice</p>
+            <p><a class="btn btn-default" @Html.ActionLink("CIS445", "sys_analysis", "Home")</a></p>
+        </div>
+        <div class="col-md-4">
+            <h2>Development Project</h2>
+            <p>Team project</p>
+            <p><a class="btn btn-default" @Html.ActionLink("CIS411", "deve_project", "Home")</a></p>
+        </div>
+    </div>
+</div>
+

@@ -1,0 +1,76 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    <script src="https://code.jquery.com/jquery.min.js"></script>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css?parameter=1" rel="stylesheet">
+    <link href="../css/simple-sidebar.css" rel="stylesheet" type="text/css" />
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                @Html.ActionLink("Portfilio", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+            </div>
+            
+                <ul class="nav navbar-nav">
+                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                    <li>@Html.ActionLink("About", "About", "Home")</li>
+                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                    <li class="dropdown" >
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Skills<span class="caret"></span></a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li role="menuitem">@Html.ActionLink("Applation Devaloping", "programming", "Home")</li>
+                        <li role="menuitem">Database Design</li>
+                        <li role="menuitem">@Html.ActionLink("Web Architecture", "web_deve", "Home")</li>
+                        <li role="menuitem">Development Project</li>
+                        <li role="menuitem">System Analysis & Design</li>
+                        @*<li role="menuitem">@Html.ActionLink("CIS411", "deve_project", "Home")</li>*@
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+    
+    </div>
+    <div id="wrapper" class="container-fluid col-lg-2 col-md-2 col-sm-2 col-xs-2" >
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <div id="sidebar-wrapper" class="row">
+                <ul class="nav nav-sidebar">
+                    <li><img class="col-lg-12 col-md-12 col-sm-12 col-xs-12" width="350" height="200" src="~/img/me2.jpg" /></li>
+                </ul>
+                <ul class="nav nav-sidebar">
+                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                    <li>@Html.ActionLink("About", "About", "Home")</li>
+                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                    <li><a href="https://www.linkedin.com/in/alaa-hawsawi-702881104">Linkedin</a></li>
+                </ul>
+            </div>
+            </div>
+        </div>
+        <div class="container body-content col-lg-10 col-md-10 col-sm-10 col-xs-10">
+            @RenderBody()
+
+        </div>
+
+
+        @Scripts.Render("~/bundles/jquery")
+        @Scripts.Render("~/bundles/bootstrap")
+        @RenderSection("scripts", required: false)
+</body>
+</html>
